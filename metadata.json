@@ -1,0 +1,6 @@
+{
+  "name": "Word Form Tiếng Anh Lớp 10",
+  "description": "App luyện tập 100 câu Word Form Tiếng Anh lớp 10 phong cách Gen Z vui nhộn, kèm giải thích ngữ pháp thông minh từ AI.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

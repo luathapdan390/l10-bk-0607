@@ -1,0 +1,83 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;700;900&display=swap');
+
+@theme {
+  --color-lime-400: #a3e635;
+  --color-cyan-400: #22d3ee;
+}
+
+.display-font {
+  font-family: 'Anton', sans-serif;
+  text-transform: uppercase;
+}
+
+.text-glow {
+  text-shadow: 0 0 15px rgba(163, 230, 53, 0.5);
+}
+
+.text-glow-red {
+  text-shadow: 0 0 15px rgba(239, 68, 68, 0.5);
+}
+
+.text-glow-cyan {
+  text-shadow: 0 0 15px rgba(34, 211, 238, 0.5);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card-hover:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.neon-border {
+  box-shadow: 0 0 20px rgba(163, 230, 53, 0.15);
+  border: 1px solid #a3e635;
+}
+
+.neon-border-red {
+  box-shadow: 0 0 20px rgba(239, 68, 68, 0.15);
+  border: 1px solid #EF4444;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #a3e635, #22d3ee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-text-red {
+  background: linear-gradient(90deg, #EF4444, #F59E0B);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+body {
+  background-color: #080808;
+  font-family: 'Inter', sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+}
+
+/* Animations */
+@keyframes pulseGlow {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 2s infinite ease-in-out;
+}
